@@ -1,0 +1,1038 @@
+/* GENERAL SETTİNGS */
+
+@font-face {
+    font_family : 'Raleway';
+    src : url('../fonts/Raleway-Regular.ttf');
+}
+
+body{
+    background: white;
+    color: #3f3f3f;
+    font: 14px  28px arial;
+    font-family: 'Raleway';
+    
+}
+
+h1 {
+    font-size: 100px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.sectionHeader {
+    background: black;
+    border-bottom: 6px solid #000;
+    height: 60px;
+    color: white;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.iletisimBody .col2 {
+    text-align: center;
+}
+
+.span1{
+    display: block;
+    font-family: Calibri;
+    margin: 20px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+h3 {
+    font-size:16px;
+    color: black;
+    transition: all .5s ease;
+}
+
+.sectionArea {
+    padding-top: 20px;
+
+    background-color: white;
+}
+
+/* GRID SETTİNGS */
+
+.container {
+    background-color: black;/*renk */
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.hizmetlercontainer .col2 {
+    background-color: black;/*renk */
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.iletisimcontainer {
+    /*renk */
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.featuresBody .container {
+    justify-content: space-between;
+}
+
+
+.engineBody .container {/**/
+    justify-content: space-between;
+}
+
+.col3 {
+    flex-grow: 1;
+    width: 33.33%;
+}
+
+.col2 {
+    flex-grow: 1;
+    width: 47%;
+    padding: 20px;
+    float: left;
+}
+
+.col1 {
+    flex-grow: 1;
+    width: 47%;
+    padding: 20px;
+    float: left;
+}
+
+/* HOME SETTİNGS */
+
+header .logo{
+    margin-right: auto;
+}
+
+header .logo img {
+    display: block;
+    height: 70px;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    /*margin-right: 20px; menu sağ boşluk*/
+    padding: 27px 17px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: white;/* */
+    transition: all .5s ease;
+}
+
+
+
+.menu li:hover a {
+    background: #B5863C;
+    color: white;
+}
+
+#mainSlider {
+    height: 683px;/**/
+    background: url('../img/main.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.slider {
+    width: 100%;
+}
+
+#mainCaption {
+    height: 600px;/**/
+    background: rgba(0,0,0, .5);
+}
+
+#mainCaption p {
+    font-size: 50px;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.featuresTop {
+    text-align: center;
+}
+
+.item {
+    padding: 10px 20px;
+}
+
+.zoom {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.zoom img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+}
+
+.item .itemText {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #B5863C;/* */
+}
+
+.item:hover .zoom img {
+    transform: scale(1.25);
+}
+
+.item:hover h3 {
+    color: white;
+}
+
+.item:hover .itemText {
+    background: black;
+    color: white;
+    transition: all .5s ease;
+}
+
+.btnDetails {
+    color: #500D16;
+    padding: 1px 10px;
+    text-decoration: none;
+    border: 1px solid #B5863C;/* */
+    transition: all .5s ease;
+}
+
+.item:hover .btnDetails {
+    color: white;
+    border: 1px solid #B5863C;
+}
+
+.itemText p {
+    margin: 20px 0;
+}
+
+#parallax {
+    background: linear-gradient(
+         rgba(0,0,0,.7),
+         rgba(0,0,0,.7)
+         ),
+         url('../img/parallax.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#parallax p {
+    color: white;
+}
+
+.engineTop {
+    text-align: center;
+}
+
+.engineContainer {
+    position: relative;
+    width: 100%;
+}
+
+.imageOver {
+    display: block;
+    width: 100%;/**/
+    height: auto;
+}
+
+.engineOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .7);/*rgba(80,13,22,.7)*/;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.engineContainer:hover .engineOverlay {
+    width: 100%;
+}
+
+.engineText {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.engineOverlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(0,0,0, .7)/*rgba(80,13,22,.7)*/;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.engineContainer:hover .engineOverlay2 {
+    width: 100%;
+    left: 0;
+}
+
+footer {
+    background: black;/*footer rengi */
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.footerItem{
+    padding-top: 20px;
+}
+
+.footerItem img {
+    height: 100px;
+    opacity: 1;
+}
+
+footer h3 {
+    color: #B5863C;
+    font-size: 24px;/**/
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+
+footer .fa {
+    font-size: 30px;
+    color: gray; 
+    line-height: 50px;
+    transition: .3 ease;
+}
+
+footer .fa:hover {
+    color: white;
+}
+
+footer p {
+    color: gray;
+    line-height: 20px;
+}
+
+footer p2{
+    background-color: black;/**/
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: gray;
+    letter-spacing: 2px;
+    transition: .3 ease;
+}
+
+.footerLinks a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.socialLinks li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+/* HİZMETLER BÖLÜMÜ */
+
+#hizmetlerSlider {
+    height: 250px;
+    background: url('../img/hizmetler_hakkimizda.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#hizmetlerCaption {
+    height: 250px;
+    background: rgba(0,0,0, .6);
+}
+
+#hizmetler {
+    background-color: #f5f5f5;
+}
+
+.hizmetlerTop {
+    text-align: center;
+}
+
+.hizmetlerBody .col2 {
+    display: flex;
+    background-color: white;
+    /*background-color: #C0C0C0;*/
+}
+
+
+.hizmetlerImage {
+    width: 40%;
+}
+
+.hizmetlerImage img {
+    width: 100%;
+    height: auto;
+}
+
+.hizmetlerText {
+    width: 60%;
+    padding-left: 10px;
+}
+
+.date {
+    color: gray;
+    font-size: 12px;
+    font-style: italic;
+}
+
+h4 {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hizmetlerText a {
+    float: right;
+    text-decoration: none;
+    color: blue;
+}
+
+.hizmetlerText a:hover {
+    text-decoration: underline;
+}
+
+.projectxTop {
+    text-align: center;  
+}
+
+#projectx .containerFluid {
+    height: 500px;
+    background: url('../img/devam_eden_proje.PNG') center center no-repeat;
+    background-size: cover;
+}
+
+.captionPX {
+    display: flex;
+    background: rgba(0,0,0, .6);
+    width: 100%;
+    height: 500px;
+}
+
+.projectxInfo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: 5%;
+    padding-right: 5%;
+    transform: translate(-50% , -50%);
+}
+
+.projectxTitle {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.projectxbtn {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    margin-top: 20px;
+}
+
+.projectxbtn:hover {
+    background: white;
+    color: black;
+    transition: all .5s ease;
+}
+
+.projectxText {
+    color: white;
+}
+
+.projectxhighlight {
+    display: inline-block;
+    background-color: black;
+    padding: 30px;
+}
+
+.containerFluid .col2 {
+    margin-left: 20px;
+    padding: 0;
+}
+
+.projectxDetail li {
+    color: white;
+}
+
+/* HAKKIMIZDA BÖLÜMÜ */
+
+#hakkimizSlider {
+    height: 250px;
+    background: url('../img/hizmetler_hakkimizda.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#hakkimizCaption {
+    height: 250px;
+    background: rgba(0,0,0, .6);
+}
+
+#hakkimizda {
+    background-color: #f5f5f5;
+}
+
+.hakkimizdaTop {
+    text-align: center;
+}
+
+.hakkimizdaBody .containerFluid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hakkimizdaBody .col2 {
+    display: flex;   
+}
+
+/*.hakkimizdaDate {
+    flex: 1;
+    text-align: center;
+    background-color: black;
+    color: white;*/
+}
+
+.hakkimizdaDate p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.hakkimizdaImage {
+    flex: 2;
+}
+
+.hakkimizdaImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.hakkimizdaText {
+    flex: 3;
+    margin-left: 10px;
+}
+
+.hakkimizdaText p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.takimTop {
+    text-align: center;
+}
+
+.takimBody .containerFluid {
+    display: flex;
+    width: 100%;
+}
+
+.takimMember {
+    position: relative;
+    width: 100%;
+}
+
+.takimMemberImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.takimMemberOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: black;
+    transition: .5s ease;
+}
+
+.takimMember:hover .takimMemberOverlay {
+    opacity: 0;
+}
+
+.takimMember:hover .takimMemberInfo {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    transform: translate(-50% , -50%);
+}
+
+.takimTitle {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.takimMemberInfo {
+    color: white;
+    background-color: #B5863C ;/**/
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .5s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.memberSocialLinks {
+    text-align: center;
+}
+
+.memberSocialLinks li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.memberSocialLinks .fa {
+    color: white;
+}
+
+/* İLETİŞİM AYARLARI */
+
+#iletisimSlider {
+    height: 250px;
+    background: url('../img/contactImage.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#iletisimCaption {
+    height: 250px;
+    background: rgba(0,0,0, .6);
+}
+
+#galeri {
+    background-color: #f5f5f5;
+}
+
+.galeriTop {
+    text-align: center;
+}
+
+.galeriSlider {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.galeriSliderItem {
+    width: 303%;
+    position: relative;
+    left: 10px;
+    animation: slideAnimation 30s infinite;
+}
+
+.galeriSliderItem img{
+    width: 33%;
+    float: left;
+    height: auto;
+}
+
+.galeriBody  {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+@keyframes slideAnimation {
+    0% {left: 0;}
+    25% {left: -100%;}
+    50% {left: -200%;}
+    75% {left: -100%;}
+    100% {left: 0;}
+}
+
+.iletisimTop {
+    text-align:center;/**/
+    padding-top: 20px;
+}
+
+iframe{
+    width: 98%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+    margin-left: 10px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.iletisimformu {
+    margin: 0 auto;
+    width: 90%;/**/
+    margin-left: 10px;;
+}
+
+.haritainfo {/**/
+    margin: auto;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.adres {
+    font-size: 24px;
+}
+
+.formItem {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.formShape {
+    color: white;
+    float: left;
+    background-color: black;
+    padding: 8px;
+    width: 8%;
+    text-align: center;
+}
+
+.formField {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 15.5px;
+    width: 91.9%;
+    display: block;
+    font-size: 14px;
+}
+
+.formBtn {
+    display: block;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.formBtn:hover {
+    background: gray;
+    transition: .5s ease;
+}
+
+/* MEDİA QUERİES */
+
+@media screen and (max-width: 960px) {
+    .caption h1{
+        font-size: 38px;
+        letter-spacing: 2px;
+    }
+    
+    #mainCaption p {
+    font-size: 25px;
+    margin-top: 10px;
+    }
+    
+    footer .fa {
+        font-size: 24px;
+    }
+    
+    footer h3 {
+        font-size: 16px;
+    }
+    
+    .hizmetlerBody .container {
+        flex-direction: column;
+    }
+    
+    .hizmetlerBody .container .col2 {
+        width: 100%;
+    }
+    
+    .hakkimizdaBody .col2 {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 720px){
+    
+    header .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    header .logo {
+        margin: 0 auto;
+    }
+          
+    .caption h1{
+     font-size: 28px;
+    letter-spacing: 2px;
+    }
+    
+    .featuresBody .container {
+        flex-direction: column;
+    }
+    
+    .featuresBody .container .col3 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .engineBody .container {
+        flex-direction: column;
+    }
+    
+    .engineBody .container .col2 {
+        width: 80%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+    
+    footer .container {
+        flex-direction: column;
+    }
+    
+    footer .container .col3 {
+        width: 100%;
+    }
+    
+    .sectionHeader {
+        font-size: 24px;
+    }
+    
+    .hizmetlerBody .container .col2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .teamMemberInfo {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .teamTitle {
+        font-size: 14px;
+    }
+    
+    .formShape {
+        display: none;
+    } 
+    
+}
+
+
+@media screen and (max-width: 540px) {
+    
+    .caption h1{
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+    
+    .featuresBody .container .col3 {
+         width: 100%;
+         margin: 0 auto;
+    }
+    
+    .engineBody .container .col2 {
+        width: 100%;
+    }
+    
+    .sectionHeader {
+        font-size: 20px;
+    }
+    
+    .iletisimformu {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 490px) {
+    
+    #mainSlider {
+    height: 400px;/**/
+    background: url('../img/main.jpg') center center no-repeat;
+    background-size: cover;
+    }
+    
+    .caption h1{
+    font-size: 30px;
+    letter-spacing: 0px; 
+    margin-top: 0px;
+    }
+    
+    #mainCaption p {
+    font-size: 15px;
+    margin-top: 10px;
+    }
+    
+    .menu li a {
+    font-size: 12px;
+    padding: 15px 12px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: white;
+    transition: all .5s ease;
+     }
+    
+
+    
+    .takimMember:hover .takimMemberInfo {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    transform: translate(-0% , -0%);
+}
+
+    .takimTitle {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    }
+
+    .takimMemberInfo {
+    color: white;
+    background-color: #B5863C ;/**/
+    position: absolute;
+    top: %100;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .5s ease;
+    padding: 10px;
+    text-align: center;
+}
+    
+    .span1{
+    display: block;
+    font-family: Calibri;
+    margin: 10px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    font-size: 8px;
+}
+
+    .sectionHeader {
+    background: black;
+    border-bottom: 6px solid #000;
+    height: 30px;
+    color: white;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 2.5px 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+    
+    
+    .featuresBody .container .col3 {
+         width: 100%;
+         margin: 0 auto;
+    }
+    
+    .engineBody .container .col2 {
+        width: 100%;
+    }
+    
+    .sectionHeader {
+        font-size: 20px;
+    }
+    
+    .iletisimformu {
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
